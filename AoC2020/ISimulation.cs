@@ -1,6 +1,6 @@
 ﻿namespace AoC2020
 {
-    interface ISimulation
+    interface ISimulationDay
     {
         string[] Input { get; set; }
 
@@ -8,7 +8,5 @@
 
         void Part1();
         void Part2();
-
-        void LoadInput();
     }
 }

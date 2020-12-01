@@ -1,21 +1,10 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
 
 namespace AoC2020
 {
-    class SimulationDay1 : ISimulation
+    class SimulationDay1 : SimulationDay
     {
-        public string[] Input { get; set; }
-
-        public void Run()
-        {
-            LoadInput();
-            Part1();
-            Part2();
-        }
-
-        public void Part1()
+        public override void Part1()
         {
             int number1 = 0;
             int number2 = 0;
@@ -36,7 +25,7 @@ namespace AoC2020
             Console.WriteLine($"Day1 Part1 results:\nNumber1: {number1}\nNumber2: {number2}\nResult: {result}\n\n");
         }
 
-        public void Part2()
+        public override void Part2()
         {
             int number1 = 0;
             int number2 = 0;
@@ -60,13 +49,6 @@ namespace AoC2020
             }
 
             Console.WriteLine($"Day1 Part2 results:\nNumber1: {number1}\nNumber2: {number2}\nNumber3: {number3}\nResult: {result}");
-            Console.ReadKey();
-        }
-
-        public void LoadInput()
-        {
-            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Day1.txt");
-            Input = File.ReadAllLines(path);
         }
     }
 }

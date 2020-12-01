@@ -46,6 +46,7 @@
     <Compile Include="ISimulation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimulationDay.cs" />
     <Compile Include="SimulationDay1.cs" />
     <Compile Include="SimulationDay2.cs" />
   </ItemGroup>
@@ -53,7 +54,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Day1.txt">
+    <Content Include="SimulationDay1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -15,14 +15,19 @@ namespace AoC2020
             RunSimulation(1);
         }
 
-        private static void RunSimulation(int day)
+        private static void RunSimulation(params int[] days)
         {
-            ISimulation sim = CreateInstance("SimulationDay" + day) as ISimulation;
+            foreach (var day in days)
+            {
+                var handlerName = typeof(SimulationDay).Name + day;
+                SimulationDay sim = CreateInstance(handlerName) as SimulationDay;
 
-            if(sim == null)
-                throw new InstanceNotFoundException("Could not find an instance of the class SimulationDay" + day + " in the current assembly with a default constructor.");
+                if (sim == null)
+                    throw new InstanceNotFoundException("Could not find an instance of the class SimulationDay" + day +
+                                                        " in the current assembly with a default constructor.");
 
-            sim.Run();
+                sim.Run();
+            }
         }
 
         private static object CreateInstance(string className)

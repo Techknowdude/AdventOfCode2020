@@ -2,28 +2,16 @@
 
 namespace AoC2020
 {
-    class SimulationDay2 : ISimulation
+    class SimulationDay2 : SimulationDay
     {
-        public string[] Input { get; set; }
-
-        public void Run()
+        public override void Part1()
         {
-            throw new NotImplementedException();
+
         }
 
-        public void Part1()
+        public override void Part2()
         {
-            throw new NotImplementedException();
-        }
 
-        public void Part2()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void LoadInput()
-        {
-            throw new NotImplementedException();
         }
     }
 }
