@@ -49,6 +49,8 @@
     <Compile Include="SimulationDay.cs" />
     <Compile Include="SimulationDay1.cs" />
     <Compile Include="SimulationDay2.cs" />
+    <Compile Include="SimulationDay3.cs" />
+    <Compile Include="SimulcationDay4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,6 +60,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SimulationDay2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SimulationDay3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SimulationDay4.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
