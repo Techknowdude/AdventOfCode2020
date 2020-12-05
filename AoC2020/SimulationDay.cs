@@ -32,7 +32,7 @@ namespace AoC2020
             throw new System.NotImplementedException("Must override this method");
         }
 
-        protected void LoadInput()
+        protected virtual void LoadInput()
         {
             string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), $"{GetType().Name}.txt");
             Input = File.ReadAllLines(path);

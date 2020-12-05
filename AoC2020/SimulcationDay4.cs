@@ -44,10 +44,47 @@ According to the above rules, your improved system would report 2 valid passport
 Count the number of valid passports - those that have all required fields. Treat cid as optional. In your batch file, how many passports are valid?
  */
 
+using System;
+using System.Collections.Generic;
+
 namespace AoC2020
 {
     class SimulcationDay4 : SimulationDay
     {
-        
+        #region Part1
+
+        public override void Part1()
+        {
+            // TODO get lines until empty line, then make an entry
+        }
+
+        class Passport
+        {
+            Dictionary<string,string> info = new Dictionary<string, string>();
+
+            public Passport(string[] entry)
+            {
+                foreach (var line in entry)
+                {
+                    var lineInfo = line.Split(new [] {' '}, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var lineItem in lineInfo)
+                    {
+                        var details = lineItem.Split(':');
+                        info[details[0]] = details[1];
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+        #region Part2
+
+        public override void Part2()
+        {
+        }
+
+        #endregion
+
     }
 }
