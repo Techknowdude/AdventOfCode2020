@@ -12,7 +12,7 @@ namespace AoC2020
     {
         static void Main(string[] args)
         {
-            RunSimulation(6);
+            RunSimulation(7);
         }
 
         private static void RunSimulation(params int[] days)
