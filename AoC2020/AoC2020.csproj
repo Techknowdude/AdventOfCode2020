@@ -67,6 +67,7 @@
     <Compile Include="SimulationDay3.cs" />
     <Compile Include="SimulationDay4.cs" />
     <Compile Include="SimulationDay5.cs" />
+    <Compile Include="SimulationDay6.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +86,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SimulationDay5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SimulationDay6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
