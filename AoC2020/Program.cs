@@ -12,7 +12,25 @@ namespace AoC2020
     {
         static void Main(string[] args)
         {
-            RunSimulation(7);
+            // get latest day and run it.
+            // get all classes that are simulation days
+            var assembly = Assembly.GetExecutingAssembly();
+            var simulations = assembly.GetTypes().Where(t => typeof(SimulationDay).IsAssignableFrom(t)).ToList();
+            simulations.Remove(typeof(SimulationDay));
+
+            // find the one with the latest day number
+            int lastDay = 0;
+            foreach (var simulation in simulations)
+            {
+                //get name
+                var name = simulation.Name.Substring(13);
+                int number = Int32.Parse(name);
+                if (number > lastDay)
+                    lastDay = number;
+            }
+
+
+            RunSimulation(lastDay);
         }
 
         private static void RunSimulation(params int[] days)
