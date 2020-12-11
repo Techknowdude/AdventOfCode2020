@@ -22,15 +22,9 @@ namespace AoC2020
             Console.ReadKey();
         }
 
-        public virtual void Part1()
-        {
-            throw new System.NotImplementedException("Must override this method");
-        }
+        public abstract void Part1();
 
-        public virtual void Part2()
-        {
-            throw new System.NotImplementedException("Must override this method");
-        }
+        public abstract void Part2();
 
         protected virtual void LoadInput()
         {

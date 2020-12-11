@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimulationDay.cs" />
     <Compile Include="SimulationDay1.cs" />
+    <Compile Include="SimulationDay10.cs" />
+    <Compile Include="SimulationDay11.cs" />
     <Compile Include="SimulationDay2.cs" />
     <Compile Include="SimulationDay3.cs" />
     <Compile Include="SimulationDay4.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="SimulationDay6.cs" />
     <Compile Include="SimulationDay7.cs" />
     <Compile Include="SimulationDay8.cs" />
+    <Compile Include="SimulationDay9.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
