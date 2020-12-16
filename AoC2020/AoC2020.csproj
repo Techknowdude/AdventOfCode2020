@@ -65,6 +65,8 @@
     <Compile Include="SimulationDay1.cs" />
     <Compile Include="SimulationDay10.cs" />
     <Compile Include="SimulationDay11.cs" />
+    <Compile Include="SimulationDay12.cs" />
+    <Compile Include="SimulationDay13.cs" />
     <Compile Include="SimulationDay2.cs" />
     <Compile Include="SimulationDay3.cs" />
     <Compile Include="SimulationDay4.cs" />
